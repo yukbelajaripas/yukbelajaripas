@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --orange:#216603;
+    --pink:#c2ba8e;
+    --black: #1d1c1c;
+    --white: #fff;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding: 3rem 7%;
+}
+
+.heading{
+  font-size: 4rem;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 6rem;
+}
+
+.heading span{
+  color: var(--orange);
+  text-transform: capitalize;
+}
+
+.btn{
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .8rem 3rem;
+  border-radius: .5rem;
+  border: .2rem solid var(--orange);
+  color: var(--orange);
+  background: none;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: var(--orange);
+  color: var(--white);
+}
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black; /* Ganti warna teks sesuai kebutuhan */
+}
+
+.logo-img {
+  width: 170px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+  margin-right: 10px; /* Sesuaikan jarak antara logo dan teks */
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+.header .logo i {
+  color: var(--orange);
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: var(--black);
+}
+
+.header .navbar a:hover,
+.header .icons div:hover {
+  color: var(--orange);
+}
+
+.header .icons div {
+  font-size: 2.5rem;
+  margin-left: 1.7rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+/* Menu Button - Desktop */
+#menu-btn {
+  display: none; /* Hide the menu button by default on desktop */
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: none; /* Hide the navbar on mobile devices by default */
+  }
+
+  #menu-btn {
+    display: flex; /* Show the menu button on mobile devices */
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    background-color: transparent; /* Change the background color as needed */
+    border: none;
+    cursor: pointer;
+  }
+
+  #menu-btn i {
+    font-size: 1.8rem; /* Adjust the font size as needed */
+    color: var(--black); /* Adjust the color as needed */
+  }
+}
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black; /* Ganti warna teks sesuai kebutuhan */
+}
+
+.logo-img {
+  width: 170px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+  margin-right: 10px; /* Sesuaikan jarak antara logo dan teks */
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+.header .logo i {
+  color: var(--orange);
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: var(--black);
+}
+
+.header .navbar a:hover,
+.header .icons div:hover {
+  color: var(--orange);
+}
+
+.header .icons div {
+  font-size: 2.5rem;
+  margin-left: 1.7rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+/* Menu Button - Desktop */
+#menu-btn {
+  display: none; /* Hide the menu button by default on desktop */
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+  .navbar
+
+  #menu-btn {
+    display: flex; /* Show the menu button on mobile devices */
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    background-color: transparent; /* Change the background color as needed */
+    border: none;
+    cursor: pointer;
+  }
+
+  #menu-btn i {
+    font-size: 1.8rem; /* Adjust the font size as needed */
+    color: var(--black); /* Adjust the color as needed */
+  }
+}
+
+/* header ends */
+
+/* home */
+
+.home{
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  align-content: le;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.home .content{
+  flex: 1 1 40rem;
+  padding-top: 6.5rem;
+}
+
+.home .content h3{
+  font-size: 5rem;
+  color: var(--black);
+  text-align: left;
+}
+
+.home .content h3 span{
+  color: var(--orange);
+  text-align: left;
+}
+
+.home .content p {
+  font-size: 1.7rem;
+  color: var(--light-color);
+  line-height: 1.8;
+  padding: 1rem 0;
+  text-transform: none; /* Perhatikan titik koma di sini */
+}
+
+
+.home .image{
+  flex: 1 1 40rem;
+}
+
+.home .image img{
+  width: 100%;
+  padding: 1rem;
+}
+
+.custom-shape-divider-bottom-1684324473 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1684324473 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 107px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1684324473 .shape-fill {
+  fill: var(--pink);
+}
+
+/* end */
+
+/* about us */
+
+.about{
+  background: var(--pink);
+}
+
+
+.about .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about .row .image{
+  flex: 1 1 30rem;
+}
+
+.about .row .image img{
+  width: 95%;
+  height: 95%;
+}
+
+.about .row .content{
+  flex: 1 1 40rem;
+}
+
+.about .row .content h3{
+  font-size: 3.5rem;
+  color: var(--orange);
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.about .row .content p{
+  font-size: 1.4rem;
+  color: var(--black);
+  padding: 1rem 0;
+  line-height: 2;
+  text-transform: none;
+  text-align: justify;
+}
+
+/* end */
+
+/* education */
+
+/* education */
+
+.heading {
+  font-size: 3.5em; /* Sesuaikan ukuran font sesuai kebutuhan */
+  color: #050505; /* Ganti warna teks jika diperlukan */
+  margin-bottom: 10px; /* Sesuaikan jarak dengan paragraf di bawahnya */
+}
+
+.education .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  height: 550px;
+}
+
+
+.education .box-container .box {
+  background: var(--white);
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+  outline: .1rem solid rgba(0, 0, 0, .1);
+  outline-offset: -1rem;
+  overflow: hidden;
+  position: relative; /* Added for absolute positioning of text */
+  box-sizing: border-box; /* Include padding and border in the box's total width and height */
+}
+
+
+.education p {
+  font-size: 1.8em; /* Sesuaikan ukuran font sesuai kebutuhan */
+  line-height: 1.2em;
+  color: #216603; /* Ganti warna teks jika diperlukan */
+  text-transform: none;
+  margin-bottom: 10px;
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+.education .box-container .box:hover img {
+  transform: scale(1.1);
+}
+
+.education .box-container .box:nth-child(odd) {
+  background: var(--pink);
+}
+
+.education .box-container .box:nth-child(2) {
+  background: var(--orange);
+}
+
+.education .box-container .box h3 {
+  font-size: 2rem; /* Adjusted font size */
+  color: var(--white);
+  position: absolute;
+  bottom: 0; /* Positioned at the bottom */
+  left: 0; /* Positioned at the left */
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 1rem; /* Added padding for better readability */
+  margin: 0;
+}
+
+.education .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--white);
+  padding: 1rem 2rem;
+}
+
+.education .box-container .box img {
+  width: 100%;
+  height: 100%; /* 100% height to maintain aspect ratio */
+  object-fit: cover; /* Maintain aspect ratio and cover entire box */
+  
+}
+
+section {
+  text-align: center;
+}
+
+.explore-link {
+  display: inline-block;
+  padding: 20px 40px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: larger;
+  align-items: center;
+}
+
+.explore-link:hover {
+  background-color: #526049;
+}
+
+
+
+
+    
+/* end */
+
+/* LIBRARYYYYYYYYYYY */
+
+/* Resetting default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Applying styles to the library section */
+#library {
+  text-align: center;
+  padding: 40px 0;
+  background-image: url('images/bglibrary.png');
+  background-size:100%; /* Atau ganti dengan 'cover' atau nilai lain sesuai kebutuhan */
+  width: fit-content;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+
+/* Styling the heading */
+#library .heading {
+  font-size: 4em;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+
+/* Styling the box container */
+#library .box-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Styling each individual box */
+#library .box {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 0%;
+}
+
+/* Styling the image within the box to be full width */
+#library .box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5%;
+}
+
+/* Adding some overlay and text to make it visually appealing */
+#library .explore-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: #c2ba8e;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show the explore link on hover */
+#library .box:hover .explore-link {
+  opacity: 1;
+}
+
+/* Explore More container */
+.explore-more-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.explore-more-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #526049;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+.explore-more-link:hover {
+  background-color: #344536; /* Ubah warna latar belakang saat hover */
+  color: #ffd700; /* Ubah warna teks saat hover */
+}
+
+
+/* teacher */
+
+.teacher {
+  background: url(images/teacher-bgg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+#teacher .heading {
+  color: rgb(0, 0, 0);
+}
+
+.teacher h1 {
+  font-size: 3.5rem;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.teacher .box-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 20px;
+}
+
+.teacher .box-container .box {
+  background: var(--white);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  border-radius: 2rem;
+  flex: 1;
+}
+
+.teacher .box-container .box img {
+  max-height: 30rem;
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.teacher .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.teacher .box-container .box p {
+  font-size: 1.2rem;
+  color: var(--light-color);
+  margin-bottom: 1rem;
+  font-style: italic;
+  text-transform: none;
+}
+
+.teacher .box-container .box .share i {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  border-radius: .5rem;
+  background: none;
+  color: var(--pink);
+  border: .1rem solid var(--pink);
+  margin-left: .5rem;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+.teacher .box-container .box .share i:hover {
+  color: var(--white);
+  border: .1rem solid var(--orange);
+  background: var(--orange);
+}
+
+
+
+/* end */
+
+/* Styles for the footer */
+.footer {
+  background: var(--pink); /* Background color using a custom CSS variable */
+}
+
+/* Grid layout for the boxes */
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /* Responsive grid layout */
+  gap: 1.5rem; /* Gap between grid items */
+  margin-bottom: 0rem;
+  width: 100%; /* Pastikan elemen footer mengambil lebar penuh */
+  padding: 0; /* Hilangkan padding */
+  margin: 0; /* Hilangkan margin */
+}
+
+/* Styles for each box within the container */
+.footer .box-container .full-width-box {
+  background: var(--pink); /* Background color of the box */
+  padding: 0rem; /* Menambahkan padding untuk memberikan ruang di dalam box */
+  margin: 0 0rem; /* Menambahkan margin di kiri dan kanan untuk memberikan jarak antar box */
+  width: 100%; /* Memastikan box mengambil lebar penuh elemen induknya */
+}
+
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem; /* Font size for headings */
+  color: var(--orange); /* Text color using a custom CSS variable */
+  padding: 1rem 0; /* Padding around headings */
+}
+
+.footer .box-container .box a {
+  display: block; /* Display links as block elements */
+  font-size: 1.4rem; /* Font size for links */
+  color: var(--white); /* Text color for links */
+  padding: 1rem 0; /* Padding around links */
+}
+
+/* Hover effect for links */
+.footer .box-container .box a:hover {
+  color: var(--orange); /* Text color on hover using a custom CSS variable */
+}
+
+/* Styles for icons within links */
+.footer .box-container .box a i {
+  padding-right: .5rem; /* Right padding for icons */
+  color: var(--orange); /* Icon color using a custom CSS variable */
+}
+
+.footer .box-container .full-width-box p {
+  font-size: 1.6rem; /* Example font size */
+  color: #000000; /* Example text color */
+  line-height: 1.4; /* Example line height */
+  margin: 0; /* Remove any default margins */
+  text-transform: none;
+  text-align: center !important; /* Ensure text is aligned left */
+  padding: 0; /* Remove padding */
+}
+
+/* Credit section at the bottom */
+.footer .credit {
+  margin-top: 2.5rem; /* Top margin for credit section */
+  padding: 1rem; /* Padding around credit section */
+  padding-top: 2rem; /* Top padding for credit section */
+  border-top: .1rem solid rgba(0,0,0,.3); /* Border at the top */
+  text-align: center; /* Center-align text */
+  color: black; /* Text color */
+  font-size: 2rem; /* Font size for credit */
+}
+
+/* Styling for the span within the credit section */
+.footer .credit span {
+  color: var(--orange); /* Color for specific text using a custom CSS variable */
+}
+
+
+/* end */
+
+/* media query */
+
+@media (max-width:991px){
+
+  html{
+    font-size: 55%;
+  }
+
+  .header{
+    padding: 2rem 3rem;
+  }
+
+  section{
+    padding: 3rem;
+  }
+
+}
+
+@media (max-width:768px){
+
+  #menu-btn{
+    display: inline-block;
+  }
+
+  .header .navbar{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: var(--white);
+  }
+
+  .header .navbar.active{
+    right: 2rem;
+    transition: .4s linear;
+  }
+
+  .header .navbar a{
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+
+  .home .content h3{
+    font-size: 4.5rem;
+  }
+
+}
+
+@media (max-width:450px){
+  html{
+    font-size: 50%;
+  }
+  .home .content h3{
+    font-size: 3.5rem;
+  }
+}
+
+

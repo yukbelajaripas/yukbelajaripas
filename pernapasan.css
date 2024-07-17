@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --orange:#216603;
+    --pink:#c2ba8e;
+    --black: #1d1c1c;
+    --white: #fff;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+ 
+  body {
+    margin: auto; /* Adjust the margin as needed */
+  }
+
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding: 3rem 7%;
+}
+
+.heading{
+  font-size: 4rem;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 6rem;
+}
+
+.heading span{
+  color: var(--orange);
+  text-transform: capitalize;
+}
+
+.btn{
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .8rem 3rem;
+  border-radius: .5rem;
+  border: .2rem solid var(--orange);
+  color: var(--orange);
+  background: none;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: var(--orange);
+  color: var(--white);
+}
+
+/* header STARTSSS */
+
+.header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+/* CSS untuk mengubah ukuran gambar logo dan menyesuaikan tata letak teks */
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+.header .logo img {
+  width: 170px; /* Sesuaikan dengan lebar yang diinginkan */
+  height: auto; /* Biarkan tinggi mengikuti proporsi aslinya */
+  margin-right: 10px; /* Beri margin untuk memberikan jarak antara logo dan teks */
+}
+
+.logo span {
+  font-size: px;
+}
+.header .navbar a {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: var(--black);
+}
+
+.header .navbar a:hover,
+.header .icons div:hover {
+  color: var(--orange);
+}
+
+.header .icons div {
+  font-size: 2.5rem;
+  margin-left: 1.7rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+#menu-btn {
+  display: none;
+}
+
+
+
+/* header ends */
+
+body {
+  margin: 20px;
+}
+
+.image-section {
+  text-align: center;
+  margin-top: 50px; /* Optional margin for positioning */
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+}
+/* header STARTSSS */
+
+
+
+/* MENU ISI STARTSSSSSSS */
+.menu-icons {
+  position: fixed;
+  left:0; /* Adjust the left position as needed */
+  top: 59%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff; /* Adjust the background color as needed */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Optional: add a box shadow */
+  padding: 20px; /* Adjust the padding as needed */
+  z-index: 1000;
+}
+
+.icon {
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px; /* Adjust the margin between icons */
+  transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Scale up the icon on hover */
+}
+
+.icon img {
+  width: 58px; /* Adjust the width of the icon images */
+}
+
+.icon p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px; /* Adjust the font size of the text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .menu-icons {
+    display: none; /* Hide the icons on smaller screens if needed */
+  }
+}
+/* MENU ISI ENDS */
+
+
+/* MENU KELASSSSSSSSSS */
+.navigation-section {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff; /* Sesuaikan dengan warna yang diinginkan */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+  top: 20%;
+}
+
+.navigation-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icon-container a {
+  text-decoration: none;
+  color: #000; /* Sesuaikan dengan warna teks yang diinginkan */
+}
+
+.icon-container img {
+  width: 50px;
+}
+
+.icon-container p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.icon-container a:hover {
+  color: #3366cc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navigation-section {
+    display: none; /* Sembunyikan pada layar kecil jika diperlukan */
+  }
+}
+
+/* MENU KELASSSSSSSSSS ENDS */
+
+
+/* Styling for materi section */
+
+
+
+
+
+#Materi .video-box p {
+  font-size: 16px;
+  text-align: justify;
+  align-items: center;
+  margin-top: 20px;
+  text-transform: none;
+}
+
+#Materi .video-box h3 {
+  font-size: 2rem;
+}
+
+#Materi .content-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* ... (rest of your existing CSS) ... */
+
+#Materi {
+  background-color: #d5dbc4;
+  padding: 80px 0;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content {
+  max-width: 800px;
+  text-align: left;
+  flex-basis: 60%;
+}
+
+.content h3 {
+  color: #2c6d84;
+  font-size: 2.8em;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.content p {
+  color: #000000;
+  font-size: 1.2em;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 80px;
+  text-align: justify;
+  text-transform: none;
+}
+
+.image-container {
+  max-width: 800px;
+  padding-bottom: 100px;
+  flex-basis: 40%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  align-items: flex-start;
+}
+
+.video-box {
+  flex: 1;
+  max-width: 150%;
+  margin-bottom: 20px;
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 400px;
+  border: 10px solid #1b2f05;
+  border-radius: 8px;
+}
+
+.video-box p {
+  font-size: 16px;
+  text-align: justify;
+  align-items: center;
+  margin-top: 20px;
+  text-transform: none;
+}
+
+.video-box h3 {
+  font-size: 2rem;
+}
+
+.content-heading {
+  font-size: 24px; /* Set the desired font size for both h3 elements */
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.custom-section {
+  background-color: #f0f0f0; /* Placeholder background color */
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+.custom-section .fp-iframe {
+  border: 1px solid lightgray;
+  width: 100%;
+  height: 400px;
+  /* Add any additional styles for the iframe */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .heading {
+      font-size: 2em;
+  }
+
+  .content h3 {
+      font-size: 1.5em;
+  }
+
+  .content p {
+      font-size: 1em;
+  }
+}
+
+
+/* CP DAN TP */
+#CPTPATP .education {
+  text-align: center;
+  padding: 50px 0;
+}
+
+#CPTPATP .heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#CPTPATP .box-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#CPTPATP .box {
+  width: 30%;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+#CPTPATP ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#CPTPATP li {
+  margin-bottom: 5px;
+}
+
+
+#CPTPATP .box-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#CPTPATP .box {
+  width: 40%;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#CPTPATP .box1 {
+  background: #cfe79a;
+}
+
+#CPTPATP .box2 {
+  background: #a2c097;
+}
+
+#CPTPATP .box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#CPTPATP h3 {
+  font-size: 24px;
+  color: #26481b;
+  margin-bottom: 10px;
+}
+
+#CPTPATP ul {
+  list-style-type: none;
+  padding: 0;
+  text-transform: none;
+  text-align: justify;
+}
+
+#CPTPATP li {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 10px;
+  text-transform: none;
+  text-align: justify;
+}
+
+
+
+
+
+/* LKPD STARTED */
+
+.LKPD {
+  background-color: #bdbc8e; /* Ganti dengan warna yang diinginkan */
+  padding: 20px; /* Sesuaikan padding sesuai kebutuhan */
+  margin-left: px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+/* Ganti warna teks untuk judul h1 di dalam section dengan class "LKPD" */
+.LKPD h1 {
+  color: #000000; /* Ganti dengan warna teks yang diinginkan */
+}
+
+.LKPD h3 {
+  text-align: center;
+  align-items: center;
+  text-transform: none;
+  font-size: 2rem;
+  color: #1b2f05;
+}
+.LKPD #liveworksheet7521242 {
+  max-width: 600px; /* Sesuaikan dengan lebar maksimal yang diinginkan */
+  margin: 0 auto; /* Menetapkan margin otomatis untuk posisi tengah */
+  align-items: center;
+}
+/* Ganti warna teks untuk link di dalam section dengan class "LKPD" */
+.LKPD a {
+  color: #2b3641; /* Ganti dengan warna link yang diinginkan */
+}
+
+/* KUIS STARTSSSSSSSSS */
+/* Ganti warna latar belakang untuk section dengan class "KUIS" */
+.KUIS h3 {
+  text-transform: none;
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+
+
+
+/* footer */
+
+.footer{
+  background: var(--pink);
+  margin-left: 20px;
+}
+
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.2rem;
+  color: var(--orange);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+  font-size: 1.5rem;
+  color: black;
+  padding: 1rem 0;
+  line-height: 2;
+  text-transform: none;
+  text-align: center;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.4rem;
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+  color: var(--orange);
+}
+
+.footer .box-container .box a i{
+  padding-right: .5rem;
+  color: var(--orange);
+}
+
+.footer .credit{
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-top: .1rem solid rgba(0,0,0,.3);
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+}
+
+.footer .credit span{
+  color: var(--orange);
+}
+
+/* end */
+
+/* media query */
+
+@media (max-width:991px){
+
+  html{
+    font-size: 55%;
+  }
+
+  .header{
+    padding: 2rem 3rem;
+  }
+
+  section{
+    padding: 3rem;
+  }
+
+}
+
+@media (max-width:768px){
+
+  #menu-btn{
+    display: inline-block;
+  }
+
+  .header .navbar{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: var(--white);
+  }
+
+  .header .navbar.active{
+    right: 2rem;
+    transition: .4s linear;
+  }
+
+  .header .navbar a{
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+
+  .home .content h3{
+    font-size: 4.5rem;
+  }
+
+}
+
+@media (max-width:450px){
+  html{
+    font-size: 50%;
+  }
+  .home .content h3{
+    font-size: 3.5rem;
+  }
+}
+
+
